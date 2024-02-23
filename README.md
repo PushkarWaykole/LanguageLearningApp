@@ -11,6 +11,7 @@ Type “npm install” to install all the required libraries
 Type “npm start” to start the frontend
 
 One for backend
+Replace the url in env with your won mongo db url
 Type “cd emitrr_backend”
 Type “npm install” to install all the required libraries
 Type “nodemon index.js” to start the backend
