@@ -111,31 +111,31 @@ Frontend:
 # Backend
 
 User Schema
-const UserSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        required: [true, "Please provide an Email!"],
-        unique: [true, "Email Exist"],
-    },
-    password: {
-        type: String,
-        required: [true, "Please provide a password!"],
-        unique: false,
-    },
-    languages: {
-        type: [String],
-        default: ["English", "Spanish", "French"],
-    },
-    selected_language:{
-        type:String,
-        require:false,
-        default:"English",
-    },
-    score:{
-        type:Number,
-        default:0,
-    }
-})
+const UserSchema = new mongoose.Schema({</br>
+    email: {</br>
+        type: String,</br>
+        required: [true, "Please provide an Email!"],</br>
+        unique: [true, "Email Exist"],</br>
+    },</br>
+    password: {</br>
+        type: String,</br>
+        required: [true, "Please provide a password!"],</br>
+        unique: false,</br>
+    },</br>
+    languages: {</br>
+        type: [String],</br>
+        default: ["English", "Spanish", "French"],</br>
+    },</br>
+    selected_language:{</br>
+        type:String,</br>
+        require:false,</br>
+        default:"English",</br>
+    },</br>
+    score:{</br>
+        type:Number,</br>
+        default:0,</br>
+    }</br>
+})</br>
 
 
 # POST request
@@ -146,10 +146,10 @@ Login(/login)= match the password and send a token generated from bcypt
 
 # GET request
 
-/questions = retrieve all the questions available in the database
-/:email/language = get the selected language of the user
-/:email/getUserData=get entire user data from email
-/getAllUser = get all users to show the leaderboard
+/questions = retrieve all the questions available in the database </br>
+/:email/language = get the selected language of the user </br>
+/:email/getUserData=get entire user data from email </br>
+/getAllUser = get all users to show the leaderboard </br>
 
 
 
